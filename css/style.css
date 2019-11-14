@@ -1,0 +1,182 @@
+body{
+	background-color: #ecf0f1;
+	margin: 0;
+	font-family: 'Nunito', sans-serif;
+	color: #192a56;
+}
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+}
+.form2 {
+    width:400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+}
+input[type=email], input[type=password],input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #192a56;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    margin-top: 3em;
+    display: block;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    transform: scale(1);
+    border-radius: 30px;
+}
+input[type=submit]:hover {
+    transform: scale(1.10);
+}
+
+.user{
+    width: 15%;
+    margin: 0 auto;
+    display: block;
+}
+.erreur{
+    color: red;
+    text-align: center;
+}
+.nav{
+	padding: 20px;
+	width: 90%;
+	margin: 0 auto;
+}
+nav{
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 12px;
+	position: relative;
+	transform: scale(1);
+}
+nav li:hover{
+	transform: scale(1.10);
+	transition: 150ms;
+}
+nav a {
+	color: #192a56;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.logo{
+	width: 5%;
+	float: left;
+}
+.toggle_btn{
+	height: 30px;
+	width: 30px;
+	position: relative;
+	float: right;
+	margin-right: 30px;
+	margin-top: 20px;
+	cursor: pointer;
+	transform: scale(1);
+	display: none;
+}
+
+.toggle_btn span{
+	height: 4px;
+	background-color: #192a56;
+	width: 100%;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	border-radius: 10px;
+}
+.toggle_btn span:before{
+	content: '';
+	height: 4px;
+	background-color: #192a56;
+	width: 100%;
+	position: absolute;
+	top: -10px;
+	left: 0;
+	border-radius: 10px;
+}
+.toggle_btn span:after{
+	content: '';
+	height: 4px;
+	background-color: #192a56;
+	width: 100%;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	border-radius: 10px;
+}
+.toggle_btn:hover {
+	transform: scale(1.10);
+	transition: 250ms;
+}
+@media only screen and (max-width: 1200px){
+	.menu{
+		position: absolute;
+		top: 90px;
+		right: 0px;
+		width: 200px;
+		display: none;
+
+	}
+	.toggle_btn{
+		display: flex;
+	}
+	.active {
+		display: flex;
+		transition: 200ms;
+	}
+
+	nav li{
+		padding:  20px;
+	}
+}
+.userlogo{
+	cursor: pointer;
+}
+.option{
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    width: 200px;
+    display: none;
+    padding: 0px 30px;
+}
+.active {
+	display: flex;
+	transition: 200ms;
+}
